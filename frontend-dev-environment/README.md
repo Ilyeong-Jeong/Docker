@@ -8,15 +8,16 @@
 Dockerfile을 build 또는 Docker image를 pull 받아 해당 image로 컨테이너 생성 및 실행.
 
 ```
-docker run -it —name [컨테이너 이름] -p [호스트 포트]:[컨테이너 포트] -v [마운트시킬 경로]:[마운트되는 경로] [이미지 이름] [실행 명령어] 
+docker run -it —name <컨테이너 이름> -p <호스트 포트>:<컨테이너 포트> -v <마운트시킬 경로>:<마운트되는 경로> <이미지 이름> <실행 명령어> 
 ```
-로컬 호스트의 Workspace와 컨테이너의 Workspace를 맞추기 위해 이미지 실행시(docker run) Bind mount 방식 사용 (Volume을 만들어 쓸지 고려)
+로컬 호스트의 Workspace와 컨테이너의 Workspace를 맞추기 위해 이미지 실행시(docker run) Bind mount 방식 사용.
 
 2. 생성된 컨테이너 접속시
 ```
-docker start [컨테이너 이름]
+docker start <컨테이너 이름>
 
-docker exec -it [컨테이너 이름] [실행 명령어]
+docker exec -it <컨테이너 이름> <실행 명령어>
 ```
 
+- 배포 환경 구성 추가 고려.
 - 공통된 작업 환경 셋팅을 위해 더 필요한 라이브러리나 프레임워크는 설치 명령어를 Dockerfile에 추가하거나 추가된 이미지를 풀 받아 컨테이너를 실행.
