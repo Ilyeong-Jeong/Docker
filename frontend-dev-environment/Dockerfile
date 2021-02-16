@@ -15,7 +15,7 @@ RUN npm install webpack-dev-server -g
 
 # Deploy environment
 
-# Docker install (DinD / DooD)
+# Docker install
 # ENV DEBIAN_FRONTEND noninteractive
 # RUN apt-get update && apt-get install -y apt-transport-https ca-certificates gnupg-agent software-properties-common
 # RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
