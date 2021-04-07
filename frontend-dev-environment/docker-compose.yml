@@ -1,0 +1,21 @@
+# 파일 규격 버전
+version: '3'
+
+# 실행 하기 위한 컨테이너(서비스) 정의
+services:
+  # 서비스 이름
+  devbox: 
+    # 도커파일 위치 절대 경로 (Docker Hub에 이미지 사용 가능 ex) image: <이미지 네임>)
+    build: ./
+    # 포트 바인딩 docker run -p 옵션
+    ports:
+      #- "<호스트 포트>:<컨테이너 포트>"
+      - "3000:3000"
+    # 실행 명령어
+    command: 
+      # - <실행 명령어>
+      - /bin/bash
+    # 마운트할 디렉토리 위치 지정 docker run -v 옵션
+    volumes:
+      # - <마운트시킬 경로>:<마운트되는 경로>
+      - ./:/home/dev/repos

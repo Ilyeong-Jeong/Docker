@@ -25,6 +25,6 @@ RUN npm install webpack-dev-server -g
 # awscli install
 # RUN apt-get install -y awscli
 
-EXPOSE 노출시킬 포트 번호
+EXPOSE <노출시킬 포트 번호>
 
 ENTRYPOINT ["/bin/bash"]

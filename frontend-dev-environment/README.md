@@ -19,5 +19,20 @@ docker start <컨테이너 이름>
 docker exec -it <컨테이너 이름> <실행 명령어>
 ```
 
+---
+
+**Docker Compose로 구성**
+
+1. 작성된 Dockerfile을 이용한 docker-compose.yml 작성.
+
+2. 생성된 서비스 실행.
+```
+docker-compose up
+
+docker-compose run <서비스 이름> <실행 명령어>
+```
+
+---
+
 - 배포 환경 구성 추가 고려.
 - 공통된 작업 환경 셋팅을 위해 더 필요한 라이브러리나 프레임워크는 설치 명령어를 Dockerfile에 추가하거나 추가된 이미지를 풀 받아 컨테이너를 실행.
