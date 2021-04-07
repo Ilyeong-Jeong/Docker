@@ -21,7 +21,7 @@ docker exec -it <컨테이너 이름> <실행 명령어>
 
 ---
 
-**Docker Compose로 구성**
+**Docker Compose로 구성** (Docker 명령어 옵션이 많아 Docker Compose로 구성하는 case)
 
 1. 작성된 Dockerfile을 이용한 docker-compose.yml 작성.
 
