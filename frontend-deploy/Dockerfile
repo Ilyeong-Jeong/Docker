@@ -21,7 +21,7 @@ RUN file="$(ls -1 /usr/src/app)" && echo $file
 RUN echo $(ls -1 /usr/src/app)
 
 # OPEN port
-EXPOSE 노출시킬 포트번호
+EXPOSE <노출시킬 포트번호>
 
 # Run command
 CMD [ "npm", "run", "start" ]
